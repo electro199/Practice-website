@@ -12,6 +12,9 @@
 body{
     background-color: black;
 }
+section{
+    min-height: 80vh;
+}
 /* utiles */
 
 .pd-l-4{
@@ -51,6 +54,7 @@ header li:hover{
 .main_sec{
     position: relative;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("images/mainbackground-img.png");
+    background-position: center;
     background-repeat: no-repeat;
     padding-bottom: 23rem;
 }
@@ -70,11 +74,13 @@ header li:hover{
 
 /* Second Section */
 
-.car-show-case > *{
+.pt-6r{
     padding-top: 6rem;
-    text-align: center;
 }
+.car-show-case h1 {
+    text-align: center;
 
+}
 .card-holder{
     justify-items: center;
     display: grid;
@@ -86,7 +92,22 @@ header li:hover{
 }
 .card h5{
     text-transform: uppercase;
+    font-weight: 600;
 }
 .card img{
     aspect-ratio: 16/11;
+}
+
+/* Third Section */
+.rent-sec{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(18rem, 1fr)) ;
+    gap: 1rem;
+    padding-bottom: 6rem;
+    padding: 1rem !important;
+}
+form{
+    padding: .3rem;
+    border: 1px rgba(114, 114, 114, 0.329) solid;
+    border-radius: .5rem;
 }

@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-lg">
         <header>
 
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -46,7 +46,7 @@
                 </div>
             </nav>
         </header>
-
+        <!-- first section -->
         <section class="main_sec row justify-content-center align-items-center pm-4">
             <div class="slogan-sec row">
                 <h2 class="hero-text ">
@@ -58,11 +58,11 @@
             </div>
         </section>
         <div class="row justify-content-center align-items-center  bg-info">
-
         </div>
-        <section class="car-show-case row justify-content-center align-items-center pm-4">
-            <h1 >
-                Large collections of Vehicles to choose from 
+        <!-- second section -->
+        <section class="car-show-case pt-6r row justify-content-center align-items-center pm-4">
+            <h1>
+                Large collections of Vehicles to choose from
             </h1>
             <div class="card-holder">
 
@@ -72,7 +72,7 @@
                         <h5 class="card-title">ferrari</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
-                        <a href="#" class="btn btn-primary">Rent this</a>
+                        <a href="#rent-form" class="btn btn-primary">Rent this</a>
                     </div>
                 </div>
 
@@ -125,6 +125,64 @@
                 </div>
 
             </div>
+        </section>
+
+        <!-- third section -->
+
+        <section class=" rent-sec pt-6r align-items-center pm-4">
+            <div class="">
+                <h5>
+                    Get your car by filling some information and make your dream come true !
+                </h5>
+            </div>
+            <div>
+                <form class="row g-3" id="rent-form">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                            placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">State</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Check me out
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                </form>
+            </div>
+
         </section>
 
     </div>
